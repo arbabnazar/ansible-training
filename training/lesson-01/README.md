@@ -2,7 +2,7 @@ Ansible Inventory File:
 --------------------------
 Ansible can work with multiple systems that you have in your infrastructure by using an INI format file, which is called Inventory file in ansible. During installation, it creates an example that you can use for your reference which is located at `/etc/ansible/hosts`.
 
-We can create our own inventory file from scratch like we did this(add the inventory link). The format of the file is really simple; things in brackets are called group names.
+We can create our own inventory file from scratch like we did [this](https://github.com/arbabnazar/ansible-training/blob/master/hosts). The format of the file is really simple; things in brackets are called group names.
 ```ini
 [web]
 web.example.com
