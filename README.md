@@ -26,3 +26,7 @@ This training already contains a `Vagrantfile` to get you up and running. Note t
 vagrant up
 ```
 If something will go wrong, please refer to the Vagrant's [Getting Started Guide](http://docs.vagrantup.com/v2/getting-started/index.html).
+
+For typos, grammar, etc... please create a PR for the master branch directly.
+
+Thank you!
