@@ -35,8 +35,8 @@ Once your machine is up and running, login to the control machine using the foll
 vagrant ssh
 ```
 There are two other machines, which will be used as clients for practice, on which we'll perform the  configuration using ansible from *control* machine, given them the named 
-. web
-. database
+- web
+- database
 
 To start these machines, use the following commands:
 ```
