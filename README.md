@@ -25,8 +25,26 @@ This training already contains a `Vagrantfile` to get you up and running. Note t
 ```shell
 vagrant up
 ```
+It will bring up the **control** machine (Ubuntu 14.04 LTS) and perform the following actions on it:
+- Add the latest  Ansible repository
+- Add the insecure RSA key that will be used for client machines
+- Add some additional SSH config
+
+Once your machine is up and running, login to the control machine using the following command:
+```
+vagrant ssh
+```
+There are two other machines, which will be used as clients for practice, on which we'll perform the  configuration using ansible from *control* machine, given them the named 
+- web
+- database
+
+ To start these machines, use the following commands:
+```
+vagrant up web
+vagrant up database
+```
 If something will go wrong, please refer to the Vagrant's [Getting Started Guide](http://docs.vagrantup.com/v2/getting-started/index.html).
 
-For typos, grammar, etc... please create a PR for the master branch directly.
+For  grammar, spelling mistake etc... please create a PR for the master branch directly.
 
 Thank you!
