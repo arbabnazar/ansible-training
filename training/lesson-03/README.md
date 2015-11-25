@@ -30,7 +30,7 @@ Now it's time to execute this playbooks and for this we will be using `ansible-p
 ansible-playbook lesson-03.yml
 ```
 Output will give you the details of each task whether succeeded, failed or has been made any-change. Here is how the console output should look like:
-```json
+```shell
 vagrant@Control:~/ansible/playbooks$ ansible-playbook training/lesson-03/lesson-03.yml
 
 PLAY [web] ********************************************************************
@@ -65,7 +65,7 @@ Next, our only task ran on the host `web.example.com` and report that it has cha
 At the end, Ansible gives the summary of what happened: two tasks have been run, one of them has made change on the target host (Install Nginx) and setup module doesn't make any change.
 
 Let's try to run this playbook once again:
-```json
+```shell
 vagrant@Control:~/ansible/playbooks$ ansible-playbook training/lesson-03/lesson-03.yml
 
 PLAY [web] ********************************************************************
