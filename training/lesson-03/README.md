@@ -25,6 +25,17 @@ Lets start to build the playbook which will install the **nginx** HTTP server on
 `tasks` - List of tasks to execute in this playbook.
 We just have one task that use the [apt](http://docs.ansible.com/ansible/apt_module.html) module to install the `nginx` package and also mentioned to update the package cache. We also added the `name` to this task, which is not mandatory but highly recommended. 
 
+If we want to see the list of the hosts on which this playbook will make change, then we can use the `--list-hosts` command:
+```shell
+vagrant@Control:~/ansible$ ansible-playbook training/lesson-03/lesson-03.yml --list-hosts
+
+playbook: training/lesson-03/lesson-03.yml
+
+  play #1 (web): host count=1
+    web.example.com
+
+vagrant@Control:~/ansible$
+```
 Now it's time to execute this playbooks and for this we will be using `ansible-playbook`:
 ```shell
 ansible-playbook lesson-03.yml
