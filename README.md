@@ -2,7 +2,7 @@
 [Ansible](http://docs.ansible.com/ansible/) is a configuration management tool that allows you to configure and manage other machines remotely. What makes it unique from other configuration management software like Chef or Puppet:
 
 - It uses existing SSH infrastructure
-- No needs for dedicated server, even your laptop can management 100s of machine
+- No needs for dedicated server, even your laptop can manage 100s of machine
 - Easy to get started with it
 - It uses "Facts", gathers information about system and environment before running the tasks
 - Ansible Tasks are idempotent
