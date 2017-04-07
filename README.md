@@ -28,12 +28,12 @@ git clone https://github.com/arbabnazar/ansible-training.git
 cd ansible-training
 ```
 
-このダウンロードファイルの中に、トレーニングで使用する仮想マシンを構築、運用するための `Vagrantfile`が含まれています。手動で"Vagrant box"を入手する必要はありません。単に以下のコマンドを実行するだけで、トレーニング環境の準備が整います。（ネットワーク環境によりますが、およそ10分程度かかります）
+このダウンロードファイルの中に、トレーニングで使用する仮想マシンを構築、運用するための `Vagrantfile`が含まれています。手動で"Vagrant box"を入手する必要はありません。単に以下のコマンドを実行するだけで、トレーニング環境の準備が整います。（初回起動時は、ネットワーク環境にもよりますが、およそ10分程度かかります）
 ```shell
 vagrant up
 ```
-It will bring up the **control** machine (Ubuntu 14.04 LTS) and perform the following actions on it:
-- Add the latest  Ansible repository
+この段階で、**control** 仮想マシン (CentOS7.2) が起動し、続いて以下のタスクが実行されます。
+- Ansibleのインストールに必要な yum リポジトリの追加
 - Add the insecure RSA key that will be used for client machines
 - Add some additional SSH config
 
