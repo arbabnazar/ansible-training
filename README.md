@@ -1,27 +1,34 @@
-# Ansible Training
-[Ansible](http://docs.ansible.com/ansible/) is a configuration management tool that allows you to configure and manage other machines remotely. What makes it unique from other configuration management software like Chef or Puppet:
+# Ansible トレーニング
+[Ansible](http://docs.ansible.com/ansible/) はリモートから他のマシンを管理して構成を自動化するための構成管理ツールです。Chef や Puppet等、他の構成管理ツールに比べて、以下のような特徴があります。
 
-- It uses existing SSH infrastructure
-- No needs for dedicated server, even your laptop can manage 100s of machine
-- Easy to get started with it
-- It uses "Facts", gathers information about system and environment before running the tasks
-- Ansible Tasks are idempotent
+- 既存の ssh インフラストラクチャーおよび Python実行環境を利用するため、エージェントレスである
+- 専用のサーバーが不要。例えばノートPCから100台のマシンを管理するようなこともできる
+- シンプルであるため、気軽に学び始めることができる
+- "Facts"と呼ばれる機能によってタスク実行の直前に、実行対象のシステムおよびその環境についての情報を収集することができる
+- Ansibeのタスクには冪等性 (idempotency) がある
 
-Prerequisites for Training:
+あらかじめ準備しておくもの:
 ------------------------------
-You need the install the following software on your machine:
+自分のPC(MacOSX/Linux/Windows)に以下のソフトウェアをインストールしておいてください。
 
  1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads)
 
  2 - [Vagrant](https://www.vagrantup.com)
+ 
+ 3 - [Git](https://git-scm.com/downloads) * Linux は yum や apt等からインストール
+ 
+ 4 - [Git for Windows](https://git-scm.com/download/win) ※ Windows のみ
 
-Cloning the tutorial
+コース環境のダウンロード
 -----------------------
+コース環境を入手するには、以下のコマンドを実行してください。Windowsの場合は、[Git for Windows](https://git-scm.com/download/win)の Git bashから実行してください。
+
 ```shell
 git clone https://github.com/arbabnazar/ansible-training.git
 cd ansible-training
 ```
-This training already contains a `Vagrantfile` to get you up and running. Note that you do not need to download any "box" manually. Just run this command and it will get everything for you that you need to perform this training.
+
+このダウンロードファイルの中に、トレーニングで使用する仮想マシンを構築、運用するための `Vagrantfile`が含まれています。手動で"Vagrant box"を入手する必要はありません。単に以下のコマンドを実行するだけで、トレーニング環境の準備が整います。（ネットワーク環境によりますが、およそ10分程度かかります）
 ```shell
 vagrant up
 ```
