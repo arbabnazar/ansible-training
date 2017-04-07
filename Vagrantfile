@@ -1,6 +1,7 @@
 Vagrant.configure("2") do |config|
 
-  config.vm.box = "centos/7"
+  config.vm.box = "bento/centos-7.2"
+  #config.vm.box = "centos/7"
   config.vm.box_check_update = false
   config.ssh.insert_key = false
   config.ssh.shell = "bash -c 'BASH_ENV=/etc/profile exec bash'" 
