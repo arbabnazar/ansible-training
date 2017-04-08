@@ -11,9 +11,9 @@
 ------------------------------
 自分のPC(MacOSX/Linux/Windows)に以下のソフトウェアをインストールしておいてください。なお、Windowsの場合は 64bit OSかつ 仮想化支援機能(VT-x等）をBIOS上で有効にしてある必要があります。
 
- 1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads)
+ 1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads) ※ CentOS/RHELの場合は dkms パッケージも必要です。
 
- 2 - [Vagrant](https://www.vagrantup.com)
+ 2 - [Vagrant](https://www.vagrantup.com) 
  
  3 - [Git](https://git-scm.com/downloads) * Linux は yum や apt等からインストール
  
