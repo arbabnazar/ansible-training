@@ -24,7 +24,7 @@
 コース環境を入手するには、以下のコマンドを実行してください。Windowsの場合は、[Git for Windows](https://git-scm.com/download/win)の Git bashから実行してください。
 
 ```shell
-git clone https://github.com/arbabnazar/ansible-training.git
+git clone https://github.com/yasufumic/ansible-training.git
 cd ansible-training
 ```
 
