@@ -11,13 +11,13 @@
 ------------------------------
 自分のPC(MacOSX/Linux/Windows)に以下のソフトウェアをインストールしておいてください。なお、Windowsの場合は 64bit OSかつ 仮想化支援機能(VT-x等）をBIOS上で有効にしてある必要があります。
 
- 1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads) ※ CentOS/RHELの場合は dkms パッケージも必要です。
+ 1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads)    ※ CentOS/RHELの場合は dkms パッケージも必要
 
  2 - [Vagrant](https://www.vagrantup.com) 
  
- 3 - [Git](https://git-scm.com/downloads) * Linux は yum や apt等からインストール
+ 3 - [Git](https://git-scm.com/downloads)    * Linux は yum や apt等からインストール
  
- 4 - [Git for Windows](https://git-scm.com/download/win) ※ Windows のみ
+ 4 - [Git for Windows](https://git-scm.com/download/win)    ※ Windows のみ
 
 コース環境のダウンロードと実習環境の構築：
 -----------------------
@@ -37,7 +37,7 @@ vagrant up control
 - 管理対象マシンにアクセスするための SSH公開鍵アクセス
 - その他SSH関連の設定等
 
-※ 仮想マシンが起動デキナイ場合は、システムリソースの不足、あるいはBIOSでの仮想化支援機能設定が無効である可能性があります。
+ ※ 仮想マシンが起動デキナイ場合は、システムリソースの不足、あるいはBIOSでの仮想化支援機能設定が無効である可能性があります。
 
 **control**仮想マシンが起動したら、以下のコマンドでログインし、コース環境ファイルにアクセスできることを確認してください。
 ```
@@ -45,7 +45,7 @@ vagrant ssh
 ls
 ```
 
-※ なお、この段階で、何もファイルが見えていない場合は、デプロイに失敗しているので、以下のコマンドで一旦仮想マシンを削除して、再度のデプロイを試行してください。
+ ※ なお、この段階で、何もファイルが見えていない場合は、デプロイに失敗しているので、以下のコマンドで一旦仮想マシンを削除して、再度のデプロイを試行してください。
 
 ```
 vagrant destroy
