@@ -47,6 +47,12 @@ ls
 
  ※ なお、この段階で、何もファイルが見えていない場合は、デプロイに失敗しているので、以下のコマンドで一旦仮想マシンを削除して、再度のデプロイを試行してください。
 
+続いて、以下のコマンドを試します。
+```
+ansible all --list-hosts
+ansible all -m ping
+```
+
 ```
 vagrant destroy
 vagrant up
