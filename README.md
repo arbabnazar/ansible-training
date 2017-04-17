@@ -11,11 +11,11 @@
 ------------------------------
 自分のPC(MacOSX/Linux/Windows)に以下のソフトウェアをインストールしておいてください。各ソフトウェアの名前の部分が、ダウンロード元サイトのリンクになっています。なお、Windowsの場合は 64bit OSかつ 仮想化支援機能(VT-x等）をBIOS上で有効にしてある必要があります。（所要時間約60分）
 
- 1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads)    ※ CentOS/RHELの場合は dkms パッケージも必要
+ 1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads)  ... 仮想マシン実行環境 ※ CentOS/RHELの場合は dkms パッケージも必要
 
- 2 - [Vagrant](https://www.vagrantup.com) 
+ 2 - [Vagrant](https://www.vagrantup.com)  ... 仮想マシン環境等デプロイツール
  
- 3 - [Git](https://git-scm.com/downloads)    ※ Linux は yum や apt等からインストール
+ 3 - [Git](https://git-scm.com/downloads)  ... ドキュメント・コード管理およびバージョン管理ツール  ※ Linux は yum や apt等からインストール
  
  3’ - [Git for Windows](https://git-scm.com/download/win)    ※ Windows の人はこちら  （bash, vim, git等が使えるようになります）
 
