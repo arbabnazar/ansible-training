@@ -25,13 +25,13 @@
 コース環境を入手するには、以下のコマンドを実行してください。Windowsの場合は、[Git for Windows](https://git-scm.com/download/win)の Git bashから実行してください。（所要時間約60分）
 
 ```shell
-git clone https://github.com/yasufumic/ansible-training.git
-cd ansible-training
+host$ git clone https://github.com/yasufumic/ansible-training.git
+host$ cd ansible-training
 ```
 
 このダウンロードファイルの中に、トレーニングで使用する仮想マシンを構築、運用するための `Vagrantfile`が含まれています。手動で"Vagrant box"を入手する必要はありません。単に以下のコマンドを実行するだけで、トレーニング環境の準備が整います。（初回起動時は、ネットワーク環境にもよりますが、およそ10分程度かかります）
 ```shell
-vagrant up control
+host$ vagrant up control
 ```
 この段階で、**control** 仮想マシン (CentOS7.2) が起動し、続いて以下のタスクが実行されます。
 - Ansibleのインストールに必要な yum リポジトリの追加
@@ -42,8 +42,8 @@ vagrant up control
 
 **control**仮想マシンが起動したら、以下のコマンドでログインし、コース環境ファイルにアクセスできることを確認してください。
 ```
-vagrant ssh control
-ls
+host$ vagrant ssh control
+vagrant@Controll$ ls
 ```
 
 **crontrol**仮想マシンの他に、以下の2台の仮想マシンがあります。これらは管理対象となるクライアントです。
@@ -53,22 +53,22 @@ ls
 
 これらの仮想マシンを起動するために、ホスト側で以下のコマンドを実行してください。
 ```
-vagrant up web
-vagrant up database
+host$ vagrant up web
+host$ vagrant up database
 ```
 
 続いて、**control**上で以下のコマンドを試します。
 ```
-ansible all --list-hosts
-ansible all -m ping
+vagrant@Control$ ansible all --list-hosts
+vagrant@Control$ ansible all -m ping
 ```
 
  ※ なお、この段階で、エラーが出たり、何もファイルが見えていない場合は、デプロイに失敗しているので、以下のコマンドをホスト上で実行し、一旦仮想マシンを削除して、再度のデプロイを試行してください。
 
 
 ```
-vagrant destroy
-vagrant up
+host$ vagrant destroy
+host$ vagrant up
 ```
 
 Vagrantの動作について問題があった場合は、このサイトを参照してください。 [Getting Started Guide](http://docs.vagrantup.com/v2/getting-started/index.html).
