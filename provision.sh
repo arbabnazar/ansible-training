@@ -1,8 +1,8 @@
 # Install the latest version of Ansible on control machine
 #apt-add-repository -y ppa:ansible/ansible
 yum install -y epel-release
-#apt-get update
-yum update -y
+#apt-get update --- taking very long time, so omitted
+#yum update -y
 #apt-get install -y ansible
 yum install -y ansible
 
