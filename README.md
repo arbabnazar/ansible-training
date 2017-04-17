@@ -9,7 +9,7 @@
 
 あらかじめ準備しておくもの：
 ------------------------------
-自分のPC(MacOSX/Linux/Windows)に以下のソフトウェアをインストールしておいてください。なお、Windowsの場合は 64bit OSかつ 仮想化支援機能(VT-x等）をBIOS上で有効にしてある必要があります。
+自分のPC(MacOSX/Linux/Windows)に以下のソフトウェアをインストールしておいてください。なお、Windowsの場合は 64bit OSかつ 仮想化支援機能(VT-x等）をBIOS上で有効にしてある必要があります。（所要時間約60分）
 
  1 - [Vitualbox](https://www.virtualbox.org/wiki/Downloads)    ※ CentOS/RHELの場合は dkms パッケージも必要
 
@@ -21,7 +21,7 @@
 
 コース環境のダウンロードと実習環境の構築：
 -----------------------
-コース環境を入手するには、以下のコマンドを実行してください。Windowsの場合は、[Git for Windows](https://git-scm.com/download/win)の Git bashから実行してください。
+コース環境を入手するには、以下のコマンドを実行してください。Windowsの場合は、[Git for Windows](https://git-scm.com/download/win)の Git bashから実行してください。（所要時間約60分）
 
 ```shell
 git clone https://github.com/yasufumic/ansible-training.git
