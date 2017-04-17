@@ -17,7 +17,7 @@
  
  3 - [Git](https://git-scm.com/downloads)    * Linux は yum や apt等からインストール
  
- 4 - [Git for Windows](https://git-scm.com/download/win)    ※ Windows のみ
+ 3' - [Git for Windows](https://git-scm.com/download/win)    ※ Windows の人はこちら  （bash, vim, git等が使えるようになります）
 
 コース環境のダウンロードと実習環境の構築：
 -----------------------
