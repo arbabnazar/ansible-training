@@ -37,25 +37,12 @@ vagrant up control
 - 管理対象マシンにアクセスするための SSH公開鍵アクセス
 - その他SSH関連の設定等
 
- ※ 仮想マシンが起動デキナイ場合は、システムリソースの不足、あるいはBIOSでの仮想化支援機能設定が無効である可能性があります。
+ ※ 仮想マシンが起動できなかった場合は、システムリソースの不足、あるいはBIOSでの仮想化支援機能設定が無効である可能性があります。
 
 **control**仮想マシンが起動したら、以下のコマンドでログインし、コース環境ファイルにアクセスできることを確認してください。
 ```
 vagrant ssh control
 ls
-```
-続いて、以下のコマンドを試します。
-```
-ansible all --list-hosts
-ansible all -m ping
-```
-
- ※ なお、この段階で、エラーが出たり、何もファイルが見えていない場合は、デプロイに失敗しているので、以下のコマンドで一旦仮想マシンを削除して、再度のデプロイを試行してください。
-
-
-```
-vagrant destroy
-vagrant up
 ```
 
 **crontrol**仮想マシンの他に、以下の2台の仮想マシンがあります。これらは管理対象となるクライアントです。
@@ -63,11 +50,26 @@ vagrant up
 - web
 - database
 
-これらの仮想マシンを起動するために、以下のコマンドを実行してください。
+これらの仮想マシンを起動するために、ホスト側で以下のコマンドを実行してください。
 ```
 vagrant up web
 vagrant up database
 ```
+
+続いて、**control**上で以下のコマンドを試します。
+```
+ansible all --list-hosts
+ansible all -m ping
+```
+
+ ※ なお、この段階で、エラーが出たり、何もファイルが見えていない場合は、デプロイに失敗しているので、以下のコマンドをホスト上で実行し、一旦仮想マシンを削除して、再度のデプロイを試行してください。
+
+
+```
+vagrant destroy
+vagrant up
+```
+
 Vagrantの動作について問題があった場合は、このサイトを参照してください。 [Getting Started Guide](http://docs.vagrantup.com/v2/getting-started/index.html).
 
 このドキュメントや手順に関する問題点や要望などは、この github の master branchに Pull Requestしてください。
