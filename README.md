@@ -15,9 +15,9 @@
 
  2 - [Vagrant](https://www.vagrantup.com)  ... 仮想マシン環境等デプロイツール
  
- 3 - [Git](https://git-scm.com/downloads)  ... ドキュメント・コード管理およびバージョン管理ツール  ※ Linux は yum や apt等からインストール
+ 3 - [Git](https://git-scm.com/downloads)  ... ドキュメント・コード管理およびバージョン管理ツール  ※ Linuxの人は yum や apt等からインストール
  
- 3’ - [Git for Windows](https://git-scm.com/download/win)    ※ Windows の人はこちら  （bash, vim, git等が使えるようになります）
+ 3’ - [Git for Windows](https://git-scm.com/download/win)    ※ Windowsの人はこちら  （bash, vim, git等が使えるようになります）
 
 コース環境のダウンロードと実習環境の構築：
 -----------------------
