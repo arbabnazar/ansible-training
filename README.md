@@ -19,7 +19,8 @@
  
  3 - [Git](https://git-scm.com/downloads)  ... ドキュメント・コード管理およびバージョン管理ツール  ※ Linuxの人は yum や apt等からインストール
  
- 3’ - [Git for Windows](https://git-scm.com/download/win)    ※ Windowsの人はこちら  （bash, vim, git等が使えるようになります）
+ 3’ - [Git for Windows](https://git-scm.com/download/win)    ※ Windowsの人はこちら  （bash, vim, git等が使えるようになります）  
+       インストールウィザードの **"Adjusting your PATH environment"** のところは、一番上の選択肢 **"Use Git from Git Bash only"** を選んでください。
 
 コース環境のダウンロードと実習環境の構築：
 -----------------------
