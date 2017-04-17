@@ -44,7 +44,7 @@ host$ vagrant up control
 **control**仮想マシンが起動したら、以下のコマンドでログインし、コース環境ファイルにアクセスできることを確認してください。
 ```
 host$ vagrant ssh control
-vagrant@Controll$ ls
+vagrant@Control$ ls
 ```
 
 **crontrol**仮想マシンの他に、以下の2台の仮想マシンがあります。これらは管理対象となるクライアントです。
