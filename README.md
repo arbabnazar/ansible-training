@@ -72,6 +72,11 @@ vagrant@Control$ ansible all -m ping
 host$ vagrant destroy
 host$ vagrant up
 ```
+補足 仮想マシンのシャットダウン
+
+```
+host$ vagrant halt [vm name]
+```
 
 Vagrantの動作について問題があった場合は、このサイトを参照してください。 [Getting Started Guide](http://docs.vagrantup.com/v2/getting-started/index.html).
 
