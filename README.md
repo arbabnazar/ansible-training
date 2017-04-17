@@ -41,7 +41,7 @@ vagrant up control
 
 **control**仮想マシンが起動したら、以下のコマンドでログインし、コース環境ファイルにアクセスできることを確認してください。
 ```
-vagrant ssh
+vagrant ssh control
 ls
 ```
 続いて、以下のコマンドを試します。
