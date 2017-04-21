@@ -20,7 +20,7 @@
  3 - [Git](https://git-scm.com/downloads)  ... ドキュメント・コード管理およびバージョン管理ツール  ※ Linuxの人は yum や apt等からインストール
  
  3’ - [Git for Windows](https://git-scm.com/download/win)    ※ Windowsの人はこちら  （bash, vim, git等が使えるようになります）  
-       インストールウィザードの **"Adjusting your PATH environment"** のところは、一番上の選択肢 **"Use Git from Git Bash only"** を選んでください。そのほか、基本的に[この記事](https://utano.jp/entry/2016/07/git-for-windows-install/)を参考に、インストールしてください。
+       インストールウィザードの **"Adjusting your PATH environment"** のところは、一番上の選択肢 **"Use Git from Git Bash only"** を選んでください。そのほか、基本的に[この記事](https://utano.jp/entry/2016/07/git-for-windows-install/)を参考に、インストールしてください。  
        コマンドが見つからないなどのエラーが出た場合は、Windowsの環境設定または bashの環境変数 PATHに "C:\HashiCorp\Vagrant" を指定してください。
 
 コース環境のダウンロードと実習環境の構築：
