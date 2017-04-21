@@ -20,8 +20,7 @@
  3 - [Git](https://git-scm.com/downloads)  ... ドキュメント・コード管理およびバージョン管理ツール  ※ Linuxの人は yum や apt等からインストール
  
  3’ - [Git for Windows](https://git-scm.com/download/win)    ※ Windowsの人はこちら  （bash, vim, git等が使えるようになります）  
-       インストールウィザードの **"Adjusting your PATH environment"** のところは、一番上の選択肢 **"Use Git from Git Bash only"** を選んでください。そのほか、基本的に[この記事](https://utano.jp/entry/2016/07/git-for-windows-install/)を参考に、インストールしてください。  
-       コマンドが見つからないなどのエラーが出た場合は、Windowsの環境設定または bashの環境変数 PATHに "C:\HashiCorp\Vagrant" を指定してください。
+       インストールウィザードの **"Adjusting your PATH environment"** のところは、一番上の選択肢 **"Use Git from Git Bash only"** を選んでください。そのほか、基本的に[この記事](https://utano.jp/entry/2016/07/git-for-windows-install/)を参考に、インストールしてください。
 
 コース環境のダウンロードと実習環境の構築：
 -----------------------
@@ -32,7 +31,8 @@ host$ git clone https://github.com/yasufumic/ansible-training.git
 host$ cd ansible-training
 ```
 
-このダウンロードファイルの中に、トレーニングで使用する仮想マシンを構築、運用するための `Vagrantfile`が含まれています。手動で"Vagrant box"を入手する必要はありません。単に以下のコマンドを実行するだけで、トレーニング環境の準備が整います。（初回起動時は、ネットワーク環境にもよりますが、およそ10分程度かかります）
+このダウンロードファイルの中に、トレーニングで使用する仮想マシンを構築、運用するための `Vagrantfile`が含まれています。手動で"Vagrant box"を入手する必要はありません。単に以下のコマンドを実行するだけで、トレーニング環境の準備が整います。（初回起動時は、ネットワーク環境にもよりますが、およそ10分程度かかります）  
+       このときWindowsにおいて、コマンドが見つからないなどのエラーが出た場合は、Windowsの環境設定または bashの環境変数 PATHに "C:\HashiCorp\Vagrant" を指定してください。
 ```shell
 host$ vagrant up control
 ```
