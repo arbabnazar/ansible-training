@@ -1,10 +1,7 @@
 # Install the latest version of Ansible on control machine
-#apt-add-repository -y ppa:ansible/ansible
-yum install -y epel-release
-#apt-get update --- taking very long time, so omitted
-#yum update -y
-#apt-get install -y ansible
-yum install -y ansible
+apt-add-repository -y ppa:ansible/ansible
+apt-get update
+apt-get install -y ansible
 
 # Copy the inscure rsa key to the Ansible control machine
 cat << EOT > /home/vagrant/.ssh/id_rsa
