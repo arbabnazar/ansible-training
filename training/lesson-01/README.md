@@ -18,6 +18,6 @@ web.example.com ansible_ssh_host=192.168.33.100
 [database]
 db.example.com ansible_ssh_host=192.168.33.200
 ```
-For detail explainiation please check the official [link](http://docs.ansible.com/ansible/intro_inventory.html).
+For detail explanation please check the official [link](http://docs.ansible.com/ansible/intro_inventory.html).
 
 Thanks
