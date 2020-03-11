@@ -6,4 +6,4 @@
       apt: 
         name: nginx
         update_cache: yes 
-        state: installed
+        state: present
